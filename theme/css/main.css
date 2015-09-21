@@ -113,39 +113,38 @@ body, html {
     color: #f7f7f7;
 }
 
-
-
-.entry header {
-    padding: 5px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-.entry header h2 {
-    flex-grow: 3;
-}
-
-.entry {
+.h-entry {
     padding-bottom: 50px;
     border-bottom: 1px solid #aaa;
     background-color: #f7f7f7;
     text-align: justify;
 }
 
-.entry footer {
-    margin: 20px;
+.h-entry header {
+    padding: 5px;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
+
+.p-name {
+    flex-grow: 3;
+}
+
+.entry-content {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 20px;
+}
+
 
 .post-info {
     float: right;
     margin-top: 10px;
 }
 
-.entry-content {
-    margin-left: 5%;
-    margin-right: 5%;
-}
+
 
 .to-article {
     background-color: #f7f7f7;

@@ -39,7 +39,7 @@
     margin: 10px;
 }
 
-.entry header {
+.h-entry header {
     flex-direction: column;
     text-align: center;
 }
