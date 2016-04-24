@@ -4,6 +4,7 @@ CACHE MANIFEST
 /theme/images/favicon.ico
 /theme/images/GitHub.png
 /theme/images/TwitterLogo.png
+/theme/css/main.min.css
 
 NETWORK:
 *
