@@ -1,10 +1,10 @@
 CACHE MANIFEST
 # 2016-04-23 v1.0.0
-../theme/css/font/roboto.woff2
-../theme/images/images/favicon.ico
-../theme/images/GitHub.png
-../theme/images/TwitterLogo.png
-../theme/css/main.min.css
+./theme/css/font/roboto.woff2
+./theme/images/images/favicon.ico
+./images/GitHub.png
+./images/TwitterLogo.png
+./css/main.min.css
 
 NETWORK:
 *
