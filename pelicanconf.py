@@ -4,7 +4,7 @@ from __future__ import unicode_literals
 
 AUTHOR = u'Your Name here'
 SITENAME = u'Pelican Kiwi Theme - Demo'
-SITEURL = 'http://librallu.github.io/pelican-kiwi-theme/' # PUT THE BASE URL HERE
+SITEURL = 'http://librallu.github.io/pelican-kiwi-theme' # PUT THE BASE URL HERE
 
 PATH = 'content'
 
@@ -19,7 +19,7 @@ TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
-THEME='/home/librallu/Dropbox/Blog/kiwi-theme/kiwi/'
+THEME='themes/kiwi/'
 
 KIWI_EDITO_IMAGE_LINK = 'images/avatar.png'
 KIWI_EDITO_IMAGE_ALT = 'It is me !'
