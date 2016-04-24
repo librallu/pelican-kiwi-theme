@@ -1,0 +1,39 @@
+
+#content {
+    display: flex;
+    flex-wrap: column-reverse;
+    justify-content: space-between;
+}
+
+#edito {
+    flex-direction: column;
+    width: 300px;
+    border-right: 1px solid #aaa;
+
+    div {
+        flex-direction: column;
+        margin: auto;
+
+        img {
+            margin: auto;
+            margin-bottom: 40px;
+        }
+
+        div {
+            margin: auto;
+
+            h1 {
+                margin: auto;
+                margin-bottom: 40px;
+            }
+
+            p {
+                margin: auto;
+            }
+        }
+    }
+}
+
+#post-list {
+    width: 100%;
+}

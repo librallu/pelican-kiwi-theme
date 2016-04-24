@@ -1,0 +1,26 @@
+
+#post-list {
+    div {
+        width: 855px;
+    }
+}
+
+.article-plain {
+
+    div {
+        max-width: 600px;
+
+        header {
+            div {
+                width: 600px;
+                height: 200px;
+            }
+
+            .article-info {
+                margin: 0;
+                padding: 0;
+                height: auto;
+            }
+        }
+    }
+}
