@@ -1,0 +1,197 @@
+@import 'constants';
+@import 'edito';
+@import 'article';
+
+
+@font-face {
+    font-family: $main-font;
+    src: url('fonts/roboto.woff2');
+}
+
+a {
+    color: $link-color;
+    text-decoration: none;
+}
+
+a:hover {
+    color: $link-over-color;
+}
+
+body, html {
+    margin: 0px;
+    padding: 0px;
+    min-width: 300px;
+    background-color: $header-background-color;
+    font-family: $main-font;
+    color: $main-font-color;
+}
+
+#banner {
+    width: 100%;
+    height: 100px;
+    background-color: $header-background-color;
+    color: $white-color;
+    border-bottom: 1px solid $banner-bottom-color;
+
+    h1 {
+        margin-left: 20px;
+        float: left;
+
+        a {
+            color: $white-color;
+            text-decoration: none;
+            font-weight: normal;
+            font-size: 1.5em;
+        }
+    }
+}
+
+#post-list {
+    background-color: $less-white-color;
+    padding: 70px 0px 50px 20px;
+
+    div {
+
+        display: flex;
+        flex-wrap: wrap;
+        width: 1275px;
+        margin: auto;
+
+        a {
+            display: inline-block;
+            background-color: $white-color;
+            margin-bottom: 20px;
+            margin-right: 20px;
+            border: 1px solid $article-border-color;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            transition: box-shadow .5s;
+
+            article {
+                color: $main-font-color;
+
+                div {
+                    background-color: $article-image-color;
+                    background-size: cover;
+                    background-position:center;
+                    width: 400px;
+                    height: 175px;
+                }
+
+                h2 {
+                    margin: 0;
+                    padding: 0;
+                    margin-top: 10px;
+                    margin-left: 20px;
+                }
+
+                p {
+                    text-transform: uppercase;
+                    color: $second-font-color;
+                    font-size: 1em;
+                    float: right;
+                    margin-right: 20px;
+                }
+            }
+        }
+
+        a:hover {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.39);
+        }
+    }
+
+}
+
+#paginator {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+
+    .paginator {
+
+        a {
+            margin: 0;
+            padding: 0;
+            margin-right: 20px;
+            background-color: $edito_background_color;
+            color: $white_color;
+            width: 20px;
+            height: 35px;
+            padding-top: 5px;
+            padding-right: 10px;
+            padding-left: 10px;
+            font-size: 1.5em;
+            font-weight: bold;
+            box-shadow: none;
+            border: 0;
+        }
+
+        span {
+            margin: 0;
+            margin-right: 20px;
+            padding: 0;
+            padding-top: 5px;
+            padding-right: 10px;
+            padding-left: 10px;
+            display: inline-block;
+            background-color: $white_color;
+            height: 35px;
+            padding-top: 5px;
+            font-size: 1.5em;
+
+        }
+
+        a:hover {
+            color: $white_color;
+        }
+
+    }
+
+}
+
+#main-footer {
+    padding: 20px;
+    text-align: center;
+    color: $white-color;
+
+    #social-list {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 30px;
+
+        a {
+            display: block;
+            margin-right: 30px;
+            transition: box-shadow .5s;
+
+            img {
+                width: 100px;
+                height: 100px;
+            }
+        }
+
+        a:hover {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+    }
+
+}
+
+
+
+
+
+
+
+@media (max-width:1300px) {
+    @import 'mid';
+}
+
+@media (max-width:875px) {
+    @import 'small';
+}
+
+@media (min-width:1630px) {
+    @import 'large';
+}

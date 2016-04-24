@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    {% block content_title %}
+        <div id="edito">
+            <div>
+                <img src="{{ SITEURL }}/{{KIWI_EDITO_IMAGE_LINK}}" alt="{{KIWI_EDITO_IMAGE_ALT}}" />
+                <div>
+                    <h1>{{KIWI_EDITO_TITLE}}</h1>
+                    <p class="edito-text">{{KIWI_EDITO_TEXT}}</p>
+                </div>
+            </div>
+        </div>
+    {% endblock %}
+
+    <div id="post-list">
+        <div>
+        {% for article in articles_page.object_list %}
+            <a href="{{ SITEURL }}/{{ article.url }}">
+                <article>
+                    <div><div style="background-image: url('{{ article.image }}')" ></div></div>
+                    <h2>{{ article.title }}</h2>
+                    <p>{{ article.locale_date }}</p>
+                </article>
+            </a>
+        {% endfor %}
+        </div>
+
+        <div id="paginator">
+            {% if articles_page.has_other_pages() %}
+                {% if DEFAULT_PAGINATION %}
+                    <p class="paginator">
+                        {% if articles_page.has_previous() %}
+                            <a href="{{ SITEURL }}/{{ articles_previous_page.url }}"><<</a>
+                        {% endif %}
+                        <span>
+                            Page {{ articles_page.number }} / {{ articles_paginator.num_pages }}
+                        </span>
+                        {% if articles_page.has_next() %}
+                            <a href="{{ SITEURL }}/{{ articles_next_page.url }}">>></a>
+                        {% endif %}
+                    </p>
+                {% endif %}
+            {% endif %}
+        </div>
+
+
+    </div>
+
+{% endblock content %}
