@@ -4,7 +4,8 @@ from __future__ import unicode_literals
 
 AUTHOR = u'Your Name here'
 SITENAME = u'Pelican Kiwi Theme - Demo'
-SITEURL = 'http://librallu.github.io/pelican-kiwi-theme' # PUT THE BASE URL HERE
+SITEURL = '' # PUT THE BASE URL HERE
+# SITEURL = 'http://librallu.github.io/pelican-kiwi-theme'
 
 PATH = 'content'
 
