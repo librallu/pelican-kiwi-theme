@@ -21,7 +21,7 @@ AUTHOR_FEED_RSS = None
 
 THEME='dest/kiwi/'
 
-KIWI_EDITO_IMAGE_LINK = SITEURL+'images/avatar.png'
+KIWI_EDITO_IMAGE_LINK = SITEURL+'/images/avatar.png'
 KIWI_EDITO_IMAGE_ALT = 'It is me !'
 KIWI_EDITO_TITLE = 'About me'
 KIWI_EDITO_TEXT = """
