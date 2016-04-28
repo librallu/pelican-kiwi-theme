@@ -2,23 +2,42 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
-# This file is only used if you use `make publish` or
-# explicitly specify it as your config file.
+AUTHOR = u'Your Name here'
+SITENAME = u'Pelican Kiwi Theme - Demo'
+SITEURL = 'http://librallu.github.io/pelican-kiwi-theme'
 
-import os
-import sys
-sys.path.append(os.curdir)
-from pelicanconf import *
+PATH = 'content'
 
-SITEURL = 'http://librallu.github.io/pelican-kiwi-theme/'
-RELATIVE_URLS = False
+TIMEZONE = 'Europe/Paris'
 
-FEED_ALL_ATOM = 'feeds/all.atom.xml'
-CATEGORY_FEED_ATOM = 'feeds/%s.atom.xml'
+DEFAULT_LANG = u'fr'
 
-DELETE_OUTPUT_DIRECTORY = True
+# Feed generation is usually not desired when developing
+FEED_ALL_ATOM = None
+CATEGORY_FEED_ATOM = None
+TRANSLATION_FEED_ATOM = None
+AUTHOR_FEED_ATOM = None
+AUTHOR_FEED_RSS = None
 
-# Following items are often useful when publishing
+THEME='dest/kiwi/'
 
-#DISQUS_SITENAME = ""
-#GOOGLE_ANALYTICS = ""
+KIWI_EDITO_IMAGE_LINK = SITEURL+'images/avatar.png'
+KIWI_EDITO_IMAGE_ALT = 'It is me !'
+KIWI_EDITO_TITLE = 'About me'
+KIWI_EDITO_TEXT = """
+Donec tempor ullamcorper vulputate. Vestibulum tristique mi arcu, in semper diam sagittis vitae. Donec aliquam enim in magna elementum, vel blandit quam suscipit.
+"""
+
+# FOR SEO
+BLOG_DESCRIPTION = "Pelican Kiwi Theme demo page"
+
+SOCIAL = [
+    ('twitter', 'librallu'),
+    ('github', 'librallu')
+]
+
+DEFAULT_PAGINATION = 10
+
+
+# Uncomment following line if you want document-relative URLs when developing
+#RELATIVE_URLS = True

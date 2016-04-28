@@ -20,14 +20,17 @@ TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
-THEME='themes/kiwi/'
+THEME='dest/kiwi/'
 
-KIWI_EDITO_IMAGE_LINK = 'images/avatar.png'
+KIWI_EDITO_IMAGE_LINK = SITEURL+'images/avatar.png'
 KIWI_EDITO_IMAGE_ALT = 'It is me !'
 KIWI_EDITO_TITLE = 'About me'
 KIWI_EDITO_TEXT = """
 Donec tempor ullamcorper vulputate. Vestibulum tristique mi arcu, in semper diam sagittis vitae. Donec aliquam enim in magna elementum, vel blandit quam suscipit.
 """
+
+# FOR SEO
+BLOG_DESCRIPTION = "Pelican Kiwi Theme demo page"
 
 SOCIAL = [
     ('twitter', 'librallu'),
@@ -36,8 +39,6 @@ SOCIAL = [
 
 DEFAULT_PAGINATION = 10
 
-PLUGIN_PATHS = ["plugins"]
-PLUGINS = ["optimize_images"]
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
