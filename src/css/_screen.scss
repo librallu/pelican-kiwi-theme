@@ -116,6 +116,17 @@ $len: 20px;
                 top: 0;
             }
 
+            .current:after {
+                $len2: ($len) - 5;
+                content: "";
+                border-top: $len2 solid transparent;
+                border-bottom: $len2 solid transparent;
+                border-left: $len2 solid $less-white-color;
+                position: absolute;
+                right: -$len2;
+                top: 0;
+            }
+
         }
 
         li:first-child a:before {
