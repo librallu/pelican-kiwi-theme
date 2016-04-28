@@ -1,0 +1,40 @@
+
+#content {
+    display: flex;
+    flex-wrap: column;
+    justify-content: space-between;
+}
+
+#edito {
+    flex-direction: column;
+    width: 330px;
+    border-right: 1px solid #aaa;
+
+    div {
+        flex-direction: column;
+        margin: auto;
+
+        img {
+            margin: auto;
+            margin-bottom: 40px;
+        }
+
+        div {
+            margin: auto;
+
+            h1 {
+                margin: auto;
+                margin-bottom: 40px;
+            }
+
+            p {
+                margin: auto;
+                text-align: center;
+            }
+        }
+    }
+}
+
+#post-list {
+    width: 100%;
+}

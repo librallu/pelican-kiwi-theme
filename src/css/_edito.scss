@@ -1,0 +1,44 @@
+@import 'constants';
+
+#edito {
+    border-top: 1px solid $edito_top_color;
+    background-color: $edito_background_color;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+
+    div {
+        display: flex;
+        justify-content: center;
+        max-width: 700px;
+
+        img {
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+            border-radius: 200px;
+            border: 10px solid $white-color;
+        }
+
+        div {
+            margin-left: 40px;
+            display: flex;
+            flex-direction: column;
+
+            h1 {
+                font-weight: bold;
+                font-size: 3em;
+
+            }
+
+            p {
+                margin-left: 30px;
+                font-size: 1.4em;
+            }
+
+        }
+
+    }
+
+}

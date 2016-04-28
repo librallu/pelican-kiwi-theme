@@ -1,0 +1,22 @@
+/*
+    COLOR AND FONT DEFINITION
+*/
+$main-font: 'Roboto', sans-serif;
+@font-face {
+    font-family: $main-font;
+    src: url('fonts/roboto.woff2');
+}
+
+$link-color: #a9d459;
+$link-over-color: #a7dfa7;
+$header-background-color: #464646;
+$main-font-color: #454545;
+$second-font-color: #656565;
+$white-color: #f7f7f7;
+$less-white-color: #e7e7e7;
+$banner-bottom-color: #262626;
+$border-article: #333;
+$article-border-color: #ccc;
+$edito_top_color: #c9f479;
+$edito_background_color: #a9d459;
+$article-image-color: #453;
