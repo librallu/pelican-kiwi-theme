@@ -24,7 +24,7 @@ gulp.task('js', function(){
     return gulp.src(source+"js/*")
     .pipe(plugins.uglify())
     .pipe(plugins.concat('global.min.js'))
-    .pipe(gulp.dest(destination+"kiwi/static/js/"))
+    .pipe(gulp.dest(destination+"kiwi/static/js/"));
 });
 
 /** IMG PART */
