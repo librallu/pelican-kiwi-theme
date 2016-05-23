@@ -14,6 +14,10 @@
         max-width: 800px;
         margin: auto;
 
+        img {
+          width: 100%;
+        }
+
         header {
             div {
                 width: 800px;
@@ -24,7 +28,7 @@
             h1 {
                 display: block;
                 color: $main_font_color;
-                font-size: 2em;
+                font-size: 1.6em;
                 margin-bottom: 5px;
             }
 
@@ -40,7 +44,7 @@
         }
 
         p {
-            text-align: justify;
+            text-align: left;
         }
     }
 }

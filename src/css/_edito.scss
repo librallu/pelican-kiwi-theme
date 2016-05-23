@@ -11,7 +11,7 @@
     div {
         display: flex;
         justify-content: center;
-        max-width: 700px;
+        align-items: center;
 
         img {
             display: inline-block;
@@ -25,10 +25,13 @@
             margin-left: 40px;
             display: flex;
             flex-direction: column;
+            max-width: 700px;
 
             h1 {
                 font-weight: bold;
                 font-size: 3em;
+                margin-bottom: 10px;
+                margin-top: 0;
 
             }
 
