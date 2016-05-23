@@ -31,18 +31,7 @@ blockquote, ul {
 }
 
 #banner {
-    font-size: 14pt;
-    border-bottom: 1px solid black;
-    margin-bottom: 10pt;
-    text-align: center;
-
-    h1 a {
-        text-decoration: none;
-    }
-
-    nav {
-        display: none;
-    }
+    display: none;
 }
 
 /* for links : add the link to the text
@@ -102,13 +91,22 @@ a {
 
 .article-plain {
 
-    width: 13cm;
+    width: 16cm;
     margin: auto;
     margin-top: 2cm;
 
     div {
 
+        img {
+          display: block;
+          margin: auto;
+        }
+
         header {
+
+            h1 {
+              font-size: 1.4em;
+            }
 
             margin-bottom: 3cm;
 
