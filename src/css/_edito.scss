@@ -38,6 +38,15 @@
             p {
                 margin-left: 30px;
                 font-size: 1.4em;
+
+                a {
+                  color: $white-color;
+                  text-decoration: underline;
+                }
+
+                a:hover {
+                  text-decoration: none;
+                }
             }
 
         }
