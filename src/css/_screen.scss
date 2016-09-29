@@ -53,42 +53,23 @@ $len: 20px;
         li {
 
             list-style-type: none;
-            display: inline;
+            display: inline-block;
+            margin-top: 5px;
+
+            font-size: .8em;
 
             a {
-                display: block;
                 float: left;
                 position: relative;
-                margin-right: 22px;
-                padding: 5px 15px 5px 15px;
-                background-color: $edito_background_color;
-                color: $main-font-color;
-                transition: color .25s;
-                font-weight: bold;
-                font-size: 1em;
-                height: $len;
+                color: $link-color;
+                margin-right: 8px;
             }
 
-            a:before {
-                $len2: ($len) - 5;
-                content: "";
-                border-top: $len2 solid $edito_background_color;
-                border-bottom: $len2 solid $edito_background_color;
-                border-left: $len2 solid transparent;
-                position: absolute;
-                left: -$len2;
-                top: 0;
-            }
-
-            a:after {
-                $len2: ($len) - 5;
-                content: "";
-                border-top: $len2 solid transparent;
-                border-bottom: $len2 solid transparent;
-                border-left: $len2 solid $edito_background_color;
-                position: absolute;
-                right: -$len2;
-                top: 0;
+            a::after {
+              content: '>>';
+              font-size: 0.75em;
+              color: $bread_separator;
+              margin-left: 5px;
             }
 
             a:hover {
@@ -96,49 +77,11 @@ $len: 20px;
             }
 
             .current {
-                display: block;
                 float: left;
                 position: relative;
-                margin-right: 22px;
-                padding: 5px 15px 5px 15px;
-                transition: color .25s;
-                font-weight: bold;
-                font-size: 1em;
-                height: $len;
-                background-color: $less-white-color;
-                color: $main-font-color;
+                color: $bread_inactive;
             }
 
-            .current:before {
-                $len2: ($len) - 5;
-                content: "";
-                border-top: $len2 solid $less-white-color;
-                border-bottom: $len2 solid $less-white-color;
-                border-left: $len2 solid transparent;
-                position: absolute;
-                left: -$len2;
-                top: 0;
-            }
-
-            .current:after {
-                $len2: ($len) - 5;
-                content: "";
-                border-top: $len2 solid transparent;
-                border-bottom: $len2 solid transparent;
-                border-left: $len2 solid $less-white-color;
-                position: absolute;
-                right: -$len2;
-                top: 0;
-            }
-
-        }
-
-        li:first-child a:before {
-            display: none;
-        }
-
-        li:first-child .current:before {
-            display: none;
         }
 
     }
@@ -260,11 +203,22 @@ $len: 20px;
     text-align: center;
     color: $white-color;
 
+    #link-list {
+      list-style-type: none;
+      justify-content: center;
+      display: flex;
+      flex-dirextion: row;
+
+      li {
+        margin-right: 30px;
+      }
+    }
+
     #social-list {
         display: flex;
         flex-direction: row;
         justify-content: center;
-        margin-top: 30px;
+        margin-bottom: 30px;
 
         a {
             display: block;
@@ -288,7 +242,9 @@ $len: 20px;
 
 
 
-
+@media (min-width:1630px) {
+    @import 'large';
+}
 
 @media (max-width:1300px) {
     @import 'mid';
@@ -296,8 +252,4 @@ $len: 20px;
 
 @media (max-width:875px) {
     @import 'small';
-}
-
-@media (min-width:1630px) {
-    @import 'large';
 }

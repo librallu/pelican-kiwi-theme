@@ -35,10 +35,13 @@
     </section>
 
     <footer id="main-footer">
-        Proudly powered by <a href="http://getpelican.com/">Pelican</a>,
-        which takes great advantage of <a href="http://python.org">Python</a>.
-        Kiwi theme by Luc Libralesso
+
+        <ul id="link-list">
+            <li><a href="/cv/">Mon CV</a></li>
+        </ul>
+
         <div id="social-list">
+
             {% for name, username in SOCIAL %} {% if name == 'twitter' %}
             <a href="https://twitter.com/{{ username }}" alt="twitter: {{ username }}">
                 <img src="{{ SITEURL }}/theme/img/TwitterLogo.png" alt="twitter: {{ username }}" />
@@ -50,6 +53,10 @@
             {% endif %} {% endfor %}
             </a>
         </div>
+
+        Proudly powered by <a href="http://getpelican.com/">Pelican</a>,
+        which takes great advantage of <a href="http://python.org">Python</a>.
+        Kiwi theme by Luc Libralesso
     </footer>
 
     <script src="{{ SITEURL }}/theme/js/global.min.js" type="text/javascript"></script>
