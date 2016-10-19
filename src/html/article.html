@@ -19,30 +19,38 @@
 
 {% block title %}
     {{ article.title}}
-{% endblock %}
+{% endblock title %}
 
 {% block breadscrumbs %}
 <li><a href="{{ SITEURL }}/" alt="main page">{{HOME_PAGE_NAME}}</a></li>
 <li><span class="current" >{{ article.title }}</span></li>
 {% endblock breadscrumbs %}
 
+{% block polymer_imports %}
+  <link rel="import" href="/lib/article-plain.html">
+{% endblock polymer_imports %}
+
+{% block style %}
+  <style>
+    img {
+      width: 100%;
+      height: auto;
+    }
+
+    #article {
+      width: 100%;
+    }
+  </style>
+{% endblock style %}
 
 {% block content %}
-    <article class="article-plain" itemscope itemtype="http://schema.org/BlogPosting">
-        <div>
-            <header>
-                <div class="image"><img itemprop="image" alt="illustration de l'article" src={{ article.image }} /></div>
-                <h1 itemprop="name"><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title}}</a></h1>
-                <span class="article-info">
-                    le <span class="date" itemprop="datePublished" datetime="{{ article.locale_date }}">{{ article.locale_date }}</span> par
-                    <span class="author" itemprop="author">{% for author in article.authors %}
-                        {{ author }}
-                    {% endfor %}</span>
-                </span>
-            </header>
-            <p itemprop="articleBody">
-                {{ article.content }}
-            </p>
-        </div>
-    </article>
+  <article-plain id="article"
+    title="{{article.title}}"
+    url="{{ SITEURL }}/{{ article.url }}"
+    image="{{ article.image }}"
+    date="{{ article.locale_date }}"
+    author="{% for a in article.authors %}{{a}}{% endfor %}"
+  >
+    {{ article.content }}
+  </article-plain>
 {% endblock %}

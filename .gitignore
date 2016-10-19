@@ -3,3 +3,4 @@ output/*
 node_modules
 dest/
 *.pid
+src/bower_components/*
