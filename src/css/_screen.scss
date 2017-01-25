@@ -33,7 +33,9 @@ $len: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 10px;
+    padding: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
 
     img {
       width: 150px;
@@ -67,8 +69,11 @@ $len: 20px;
 
 #white-back {
   background-color: $less-white-color;
-  padding: 70px 0px 50px 20px;
-  width: 100%;
+  margin: 0;
+  padding: 0;
+  padding-right: 5%;
+  padding-left: 5%;
+  width: 90%;
 }
 
 #post-list {

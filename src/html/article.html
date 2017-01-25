@@ -21,11 +21,6 @@
     {{ article.title}}
 {% endblock title %}
 
-{% block breadscrumbs %}
-<li><a href="{{ SITEURL }}/" alt="main page">{{HOME_PAGE_NAME}}</a></li>
-<li><span class="current" >{{ article.title }}</span></li>
-{% endblock breadscrumbs %}
-
 {% block polymer_imports %}
   <link rel="import" href="/lib/article-plain.html">
 {% endblock polymer_imports %}

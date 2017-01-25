@@ -1,9 +1,5 @@
 {% extends "base.html" %}
 
-{% block breadscrumbs %}
-<li><span class="current" >{{HOME_PAGE_NAME}}</span></li>
-{% endblock breadscrumbs %}
-
 {% block polymer_imports %}
   <link rel="import" href="/lib/edito-home.html">
 {% endblock polymer_imports %}
@@ -13,7 +9,7 @@
   <div id="white-back">
 
     <edito-home
-      title="{{KIWI_EDITO_TITLE}}"
+      titletext="{{KIWI_EDITO_TITLE}}"
     >
       {{KIWI_EDITO_TEXT}}
     </edito-home>
