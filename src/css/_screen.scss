@@ -29,61 +29,46 @@ $len: 20px;
     display: block;
     width: 100%;
     background-color: $header-background-color;
-    color: $white-color;
     border-bottom: 1px solid $banner-bottom-color;
     display: flex;
     align-items: center;
+    justify-content: center;
+    padding: 10px;
 
-    h1 {
-        margin-left: 20px;
-
-        a {
-            color: $white-color;
-            text-decoration: none;
-            font-weight: normal;
-        }
+    img {
+      width: 150px;
+      height: 150px;
+      border-radius: 200px;
+      border: 10px solid #e7e7e7;
+      margin-right: 20px;
+      margin-left: 20px;
     }
 
-    #breadcrumbs {
-
-        padding: 0;
-        margin-left: 50px;
-
-        li {
-
-            list-style-type: none;
-            display: inline-block;
-            margin-top: 5px;
-
-            font-size: .8em;
-
-            a {
-                float: left;
-                position: relative;
-                color: $link-color;
-                margin-right: 8px;
-            }
-
-            a::after {
-              content: '>>';
-              font-size: 0.75em;
-              color: $bread_separator;
-              margin-left: 5px;
-            }
-
-            a:hover {
-                color: $less-white-color;
-            }
-
-            .current {
-                float: left;
-                position: relative;
-                color: $bread_inactive;
-            }
-
-        }
-
+    a {
+      color: #e7e7e7;
+      font-weight: 500;
+      font-size: 1.7em;
+      transition: color 0.5s;
     }
+
+    .banner-left {
+      margin-left: 30px;
+    }
+
+    .banner-right {
+      margin-right: 30px;
+    }
+
+    a:hover {
+      color: $link-color;
+    }
+
+}
+
+#white-back {
+  background-color: $less-white-color;
+  padding: 70px 0px 50px 20px;
+  width: 100%;
 }
 
 #post-list {

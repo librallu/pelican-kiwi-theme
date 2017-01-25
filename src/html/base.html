@@ -28,13 +28,18 @@
 
 <body>
 
-    <header id="banner">
-        <h1><a href="{{ SITEURL }}/">{{ SITENAME }}</a></h1>
+    <!--
+    image="{{KIWI_EDITO_IMAGE_LINK}}"
+    altimg="{{KIWI_EDITO_IMAGE_ALT}}"
+    -->
 
-        <ol id="breadcrumbs">
-            {% block breadscrumbs %}
-            {% endblock breadscrumbs %}
-        <ol>
+    <header id="banner">
+        <a href="/apropos/" class="banner-left">A PROPOS</a>
+        <a href="/cv/" class="banner-left">CV</a>
+        <img src="{{KIWI_EDITO_IMAGE_LINK}}" alt="{{KIWI_EDITO_IMAGE_ALT}}"/>
+        <a href="/blog.html" class="banner-right">EXPERIMENTS</a>
+        <a href="/blog.html" class="banner-right">BLOG</a>
+
     </header>
 
     <section id="content">

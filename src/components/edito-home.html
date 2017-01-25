@@ -1,0 +1,37 @@
+
+<link rel="import" href="/lib/polymer/polymer.html">
+
+<dom-module id="edito-home">
+  <template>
+    <style>
+
+    :host {
+    }
+
+    .edito-article {
+      width: 500px;
+      padding: 10px;
+    }
+
+    .content-wrapper {
+      padding: 10px;
+      text-align: justify;
+    }
+
+
+    </style>
+
+    <article class="edito-article">
+      <h1>[[title]]</h1>
+      <div class="content-wrapper"><content></content></div>
+    </article>
+
+  </template>
+  <script>
+    Polymer({
+      is: "edito-home",
+      properties: {
+        title: String
+      }
+    });
+  </script>
