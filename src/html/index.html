@@ -2,17 +2,34 @@
 
 {% block polymer_imports %}
   <link rel="import" href="/lib/edito-home.html">
+  <link rel="import" href="/lib/home-article.html">
 {% endblock polymer_imports %}
 
 {% block content %}
 
   <div id="white-back">
 
-    <edito-home
-      titletext="{{KIWI_EDITO_TITLE}}"
-    >
+    <edito-home titletext="{{KIWI_EDITO_TITLE}}">
       {{KIWI_EDITO_TEXT}}
     </edito-home>
+
+    <div>
+      <h1>Derniers articles ou expériences</h1>
+      <div id="post-list">
+          <div>
+          {% for article in articles_page.object_list %}
+              {% if loop.index <= 2 %}
+              <home-article
+                title="{{article.title}}"
+                url="{{ SITEURL }}/{{ article.url }}"
+                image="{{ article.image }}"
+                date="{{ article.locale_date }}"
+              ></home-article>
+              {% endif %}
+          {% endfor %}
+          </div>
+      </div>
+    </div>
 
   </div>
 

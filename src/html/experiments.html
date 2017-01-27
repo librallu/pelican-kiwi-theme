@@ -9,8 +9,8 @@
 {% block content %}
 
     <div id="post-list">
-        <div>
-        {% for article in articles_page.object_list %}
+        <div id="article-div">
+        {% for article in articles_page.object_list if article.category == 'experiments' %}
             <home-article
               title="{{article.title}}"
               url="{{ SITEURL }}/{{ article.url }}"
