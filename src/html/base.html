@@ -53,12 +53,10 @@
         <div id="social-list">
 
             {% for name, username in SOCIAL %} {% if name == 'twitter' %}
-            <a href="https://twitter.com/{{ username }}" alt="twitter: {{ username }}">
-                <img src="{{ SITEURL }}/theme/img/TwitterLogo.png" alt="twitter: {{ username }}" />
+            <a class="fa fa-twitter" href="https://twitter.com/{{ username }}" alt="twitter: {{ username }}">
             </a>
             {% elif name == 'github' %}
-            <a href="https://github.com/{{ username }}" alt="github: {{ username }}">
-                <img src="{{ SITEURL }}/theme/img/GitHub.png" alt="github: {{ username }}" />
+            <a class="fa fa-github" href="https://github.com/{{ username }}" alt="github: {{ username }}">
             </a>
             {% endif %} {% endfor %}
             </a>

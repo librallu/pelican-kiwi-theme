@@ -193,14 +193,13 @@ body, html {
         margin-bottom: 30px;
 
         a {
-            display: block;
+            display: inline-block;
+            color: $less-white-color;
             margin-right: 30px;
             transition: box-shadow .5s;
-
-            img {
-                width: 100px;
-                height: 100px;
-            }
+            font-size: 100px;
+            width: 100px;
+            height: 100px;
         }
 
         a:hover {
