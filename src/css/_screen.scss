@@ -93,6 +93,10 @@ body, html {
     flex-direction: column;
     justify-content: center;
 
+    h1 {
+      text-align: center;
+    }
+
     div {
         display: flex;
         flex-wrap: wrap;
@@ -155,6 +159,15 @@ body, html {
 
     }
 
+}
+
+#text-box {
+  width: 80%;
+  margin-left: 10%;
+  font-size: 1.1em;
+  text-align: justify;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 #main-footer {

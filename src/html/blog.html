@@ -7,38 +7,35 @@
 {% endblock polymer_imports %}
 
 {% block content %}
+      <div id="post-list">
+        <h1>Articles du blog</h1>
+          <div id="article-div">
+          {% for article in articles_page.object_list if article.category == 'articles' %}
+              <home-article
+                title="{{article.title}}"
+                url="{{ SITEURL }}/{{ article.url }}"
+                image="{{ article.image }}"
+                date="{{ article.locale_date }}"
+              ></home-article>
+          {% endfor %}
+          </div>
 
-    <div id="post-list">
-        <div id="article-div">
-        {% for article in articles_page.object_list if article.category == 'articles' %}
-            <home-article
-              title="{{article.title}}"
-              url="{{ SITEURL }}/{{ article.url }}"
-              image="{{ article.image }}"
-              date="{{ article.locale_date }}"
-            ></home-article>
-        {% endfor %}
-        </div>
-
-        <div id="paginator">
-            {% if articles_page.has_other_pages() %}
-                {% if DEFAULT_PAGINATION %}
-                    <p class="paginator">
-                        {% if articles_page.has_previous() %}
-                            <a href="{{ SITEURL }}/{{ articles_previous_page.url }}"><<</a>
-                        {% endif %}
-                        <span>
-                            Page {{ articles_page.number }} / {{ articles_paginator.num_pages }}
-                        </span>
-                        {% if articles_page.has_next() %}
-                            <a href="{{ SITEURL }}/{{ articles_next_page.url }}">>></a>
-                        {% endif %}
-                    </p>
-                {% endif %}
-            {% endif %}
-        </div>
-
-
-    </div>
-
+          <div id="paginator">
+              {% if articles_page.has_other_pages() %}
+                  {% if DEFAULT_PAGINATION %}
+                      <p class="paginator">
+                          {% if articles_page.has_previous() %}
+                              <a href="{{ SITEURL }}/{{ articles_previous_page.url }}"><<</a>
+                          {% endif %}
+                          <span>
+                              Page {{ articles_page.number }} / {{ articles_paginator.num_pages }}
+                          </span>
+                          {% if articles_page.has_next() %}
+                              <a href="{{ SITEURL }}/{{ articles_next_page.url }}">>></a>
+                          {% endif %}
+                      </p>
+                  {% endif %}
+              {% endif %}
+          </div>
+      </div>
 {% endblock content %}
